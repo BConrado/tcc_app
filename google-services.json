@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1007396525838",
+    "project_id": "tcc-app-47c7d",
+    "storage_bucket": "tcc-app-47c7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007396525838:android:72cc6df44f90499608e95f",
+        "android_client_info": {
+          "package_name": "tcc.appmotociclistas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007396525838-bjp1bpcej74ttn93e6adnuqnm07srvd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC80drnCcueCwnZcjEDWaUtH2C2uQWwddw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007396525838-bjp1bpcej74ttn93e6adnuqnm07srvd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
