@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         sessionsList.add("Session_4");
 
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.list_item,sessionsList);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,sessionsList);
         sessions.setAdapter(arrayAdapter);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
