@@ -1,6 +1,8 @@
 package tcc.appmotociclistas;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -10,11 +12,15 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import tcc.appmotociclistas.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    ListView sessions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,31 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        sessions = (ListView)findViewById(R.id.sessionsList);
+
+        ArrayList<String> sessionsList = new ArrayList<>();
+
+        sessionsList.add("Session_1");
+        sessionsList.add("Session_2");
+        sessionsList.add("Session_3");
+        sessionsList.add("Session_4");
+        sessionsList.add("Session_1");
+        sessionsList.add("Session_2");
+        sessionsList.add("Session_3");
+        sessionsList.add("Session_4");
+        sessionsList.add("Session_1");
+        sessionsList.add("Session_2");
+        sessionsList.add("Session_3");
+        sessionsList.add("Session_4");
+        sessionsList.add("Session_1");
+        sessionsList.add("Session_2");
+        sessionsList.add("Session_3");
+        sessionsList.add("Session_4");
+
+
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.list_item,sessionsList);
+        sessions.setAdapter(arrayAdapter);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

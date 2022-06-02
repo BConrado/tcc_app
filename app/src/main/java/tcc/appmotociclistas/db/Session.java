@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import java.time.LocalTime;
+import java.util.ArrayList;
 
 @Entity
 public class Session {
@@ -23,15 +23,15 @@ public class Session {
     @ColumnInfo(name = "longitude_F")
     public long LongitudeF;
 
-    // fix
-    // @ColumnInfo(name = "acelerometerX")
-    //    public long[] aceletometerX;
-    //
-    //    @ColumnInfo(name = "acelerometerY")
-    //    public long[] aceletometerY;
-    //
-    //    @ColumnInfo(name = "acelerometerZ")
-    //    public long[] aceletometerZ;
+
+     @ColumnInfo(name = "acelerometerX")
+    public ArrayList<String> aceletometerX;
+
+    @ColumnInfo(name = "acelerometerY")
+    public ArrayList<String> aceletometerY;
+
+    @ColumnInfo(name = "acelerometerZ")
+    public ArrayList<String> aceletometerZ;
 
     // fix
     // @ColumnInfo(name = "giroscopioX")
@@ -43,6 +43,9 @@ public class Session {
     //    @ColumnInfo(name = "giroscopioZ")
     //    public long[] giroscopioZ;
 
-    @ColumnInfo(name = "seconds")
-    public float seconds;
+    @ColumnInfo(name = "interval")
+    public float interval;
+
+    @ColumnInfo(name = "duration")
+    public int duration;
 }
